@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:e706e6848e80984e32010b05aea76bff6d832c18c47d1fc78434161db652605e"
+content_hash = "sha256:ceed7f7ff9c6546a2b802e42bd160fb94c07d143f5976fcf769d28b6a26a621c"
 
 [[metadata.targets]]
 requires_python = "==3.9.*"
@@ -16,6 +16,7 @@ version = "2024.12.14"
 requires_python = ">=3.6"
 summary = "Python package for providing Mozilla's CA Bundle."
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "certifi-2024.12.14-py3-none-any.whl", hash = "sha256:1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56"},
     {file = "certifi-2024.12.14.tar.gz", hash = "sha256:b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db"},
@@ -27,6 +28,7 @@ version = "3.4.1"
 requires_python = ">=3.7"
 summary = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "charset_normalizer-3.4.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:b97e690a2118911e39b4042088092771b4ae3fc3aa86518f84b8cf6888dbdb41"},
     {file = "charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:78baa6d91634dfb69ec52a463534bc0df05dbd546209b79a3880a34487f4b84f"},
@@ -51,6 +53,7 @@ version = "0.8.0"
 requires_python = ">=3.6"
 summary = "Detect OS Dark Mode from Python"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "darkdetect-0.8.0-py3-none-any.whl", hash = "sha256:a7509ccf517eaad92b31c214f593dbcf138ea8a43b2935406bbd565e15527a85"},
     {file = "darkdetect-0.8.0.tar.gz", hash = "sha256:b5428e1170263eb5dea44c25dc3895edd75e6f52300986353cd63533fe7df8b1"},
@@ -62,6 +65,7 @@ version = "3.10"
 requires_python = ">=3.6"
 summary = "Internationalized Domain Names in Applications (IDNA)"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"},
     {file = "idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"},
@@ -72,7 +76,7 @@ name = "pycocoa"
 version = "23.12.28"
 summary = "Basic Python binding to macOS' Objective-C Cocoa"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 files = [
     {file = "PyCocoa-23.12.28-py2.py3-none-any.whl", hash = "sha256:326dca8c0560ac9b57581153586ae5020190acf5ca1e08a26f7e93365e467078"},
     {file = "PyCocoa-23.12.28.zip", hash = "sha256:4804f9005159e5b3c5ba774eaa6d22746da95ce4faeccd5882cdb154fa5033b3"},
@@ -84,7 +88,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Python<->ObjC Interoperability Module"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core==10.3.2",
     "pyobjc-framework-AVFoundation==10.3.2; platform_release >= \"11.0\"",
@@ -252,7 +256,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Python<->ObjC Interoperability Module"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 files = [
     {file = "pyobjc_core-10.3.2-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:48e9ac3af42b2340dae709a8b894f5ef7e5132d8546adcd1797cffcc449dabdc"},
     {file = "pyobjc_core-10.3.2.tar.gz", hash = "sha256:dbf1475d864ce594288ce03e94e3a98dc7f0e4639971eb1e312bdf6661c21e0e"},
@@ -264,7 +268,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Accessibility on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -284,7 +288,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Accounts on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -301,7 +305,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AddressBook on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -320,7 +324,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AdServices on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -337,7 +341,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AdSupport on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -354,7 +358,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AppleScriptKit on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -371,7 +375,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AppleScriptObjC on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -388,7 +392,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ApplicationServices on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -406,7 +410,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AppTrackingTransparency on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -423,7 +427,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AudioVideoBridging on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -439,7 +443,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AuthenticationServices on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -458,7 +462,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AutomaticAssessmentConfiguration on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -477,7 +481,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Automator on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -496,7 +500,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AVFoundation on macOS"
 groups = ["default"]
-marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -518,7 +522,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AVKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -538,7 +542,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework AVRouting on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -557,7 +561,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework BackgroundAssets on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -576,7 +580,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework BrowserEngineKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"23.4\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"23.4\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -598,7 +602,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework BusinessChat on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -615,7 +619,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CalendarStore on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -632,7 +636,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CallKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -649,7 +653,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CFNetwork on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -668,7 +672,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Cinematic on macOS"
 groups = ["default"]
-marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-AVFoundation>=10.3.2",
@@ -688,7 +692,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ClassKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -707,7 +711,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CloudKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Accounts>=10.3.2",
@@ -727,7 +731,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the Cocoa frameworks on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
 ]
@@ -742,7 +746,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Collaboration on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -759,7 +763,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ColorSync on Mac OS X"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -776,7 +780,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Contacts on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -795,7 +799,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ContactsUI on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -815,7 +819,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreAudio on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -831,7 +835,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreAudioKit on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -851,7 +855,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreBluetooth on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -870,7 +874,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreData on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -889,7 +893,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreHaptics on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -906,7 +910,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreLocation on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -925,7 +929,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreMedia on macOS"
 groups = ["default"]
-marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -941,7 +945,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreMediaIO on macOS"
 groups = ["default"]
-marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -960,7 +964,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreMIDI on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -979,7 +983,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreML on macOS"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -998,7 +1002,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreMotion on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1014,7 +1018,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreServices on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1034,7 +1038,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreSpotlight on macOS"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1053,7 +1057,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreText on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1070,7 +1074,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CoreWLAN on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1089,7 +1093,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework CryptoTokenKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1108,7 +1112,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DataDetection on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1125,7 +1129,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DeviceCheck on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1142,7 +1146,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DictionaryServices on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-CoreServices>=10.3.2",
@@ -1159,7 +1163,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DiscRecording on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1178,7 +1182,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DiscRecordingUI on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1196,7 +1200,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DiskArbitration on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1213,7 +1217,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework DVDPlayback on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1230,7 +1234,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Accounts on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1247,7 +1251,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ExceptionHandling on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1264,7 +1268,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ExecutionPolicy on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1281,7 +1285,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ExtensionKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1300,7 +1304,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ExternalAccessory on macOS"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1319,7 +1323,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework FileProvider on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1335,7 +1339,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework FileProviderUI on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-FileProvider>=10.3.2",
@@ -1352,7 +1356,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework FinderSync on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1369,7 +1373,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework FSEvents on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1388,7 +1392,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework GameCenter on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1407,7 +1411,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework GameController on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1426,7 +1430,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework GameKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1446,7 +1450,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework GameplayKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1466,7 +1470,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework HealthKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1485,7 +1489,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ImageCaptureCore on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1504,7 +1508,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework InputMethodKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1523,7 +1527,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework InstallerPlugins on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1540,7 +1544,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework InstantMessage on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1558,7 +1562,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Intents on macOS"
 groups = ["default"]
-marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1577,7 +1581,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Intents on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Intents>=10.3.2",
@@ -1593,7 +1597,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework IOBluetooth on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1612,7 +1616,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework IOBluetoothUI on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-IOBluetooth>=10.3.2",
@@ -1629,7 +1633,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework IOSurface on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1646,7 +1650,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework iTunesLibrary on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1663,7 +1667,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework KernelManagement on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1680,7 +1684,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework LatentSemanticMapping on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1697,7 +1701,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework LaunchServices on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-CoreServices>=10.3.2",
@@ -1714,7 +1718,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for libdispatch on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1730,7 +1734,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for xpc on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1746,7 +1750,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework LinkPresentation on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1764,7 +1768,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework LocalAuthentication on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1782,7 +1786,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework LocalAuthenticationEmbeddedUI on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1800,7 +1804,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MailKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1817,7 +1821,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MapKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1838,7 +1842,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MediaAccessibility on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1855,7 +1859,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MediaLibrary on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1873,7 +1877,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MediaPlayer on macOS"
 groups = ["default"]
-marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-AVFoundation>=10.3.2",
@@ -1890,7 +1894,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MediaToolbox on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1909,7 +1913,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Metal on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1928,7 +1932,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MetalFX on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Metal>=10.3.2",
@@ -1947,7 +1951,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MetalKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -1967,7 +1971,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MetalPerformanceShaders on macOS"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Metal>=10.3.2",
@@ -1986,7 +1990,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MetalPerformanceShadersGraph on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-MetalPerformanceShaders>=10.3.2",
@@ -2003,7 +2007,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MetricKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2019,7 +2023,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MLCompute on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2036,7 +2040,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ModelIO on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2056,7 +2060,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework MultipeerConnectivity on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2075,7 +2079,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework NaturalLanguage on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2092,7 +2096,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework NetFS on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2109,7 +2113,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Network on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2128,7 +2132,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework NetworkExtension on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2147,7 +2151,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework NotificationCenter on macOS"
 groups = ["default"]
-marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"14.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2166,7 +2170,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework OpenDirectory on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2183,7 +2187,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework OSAKit on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2200,7 +2204,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework OSLog on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2221,7 +2225,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PassKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2240,7 +2244,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PencilKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2257,7 +2261,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PHASE on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-AVFoundation>=10.3.2",
@@ -2274,7 +2278,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Photos on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2293,7 +2297,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PhotosUI on macOS"
 groups = ["default"]
-marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"15.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2312,7 +2316,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PreferencePanes on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2329,7 +2333,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PubSub on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_release < \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_release < \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2346,7 +2350,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework PushKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2365,7 +2369,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the Quartz frameworks on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2381,7 +2385,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework QuickLookThumbnailing on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2399,7 +2403,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ReplayKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2418,7 +2422,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SafariServices on macOS"
 groups = ["default"]
-marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"16.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2437,7 +2441,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SafetyKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2457,7 +2461,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SceneKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2477,7 +2481,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ScreenCaptureKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.4\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.4\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2494,7 +2498,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ScreenSaver on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2513,7 +2517,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ScreenTime on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2530,7 +2534,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ScriptingBridge on macOS"
 groups = ["default"]
-marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"9.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2549,7 +2553,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SearchKit on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-CoreServices>=10.3.2",
@@ -2566,7 +2570,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Security on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2582,7 +2586,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SecurityFoundation on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2600,7 +2604,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SecurityInterface on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2620,7 +2624,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SensitiveContentAnalysis on macOS"
 groups = ["default"]
-marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2638,7 +2642,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ServiceManagement on macOS"
 groups = ["default"]
-marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"10.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2655,7 +2659,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SharedWithYou on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-SharedWithYouCore>=10.3.2",
@@ -2674,7 +2678,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SharedWithYouCore on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2693,7 +2697,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ShazamKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"21.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2709,7 +2713,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Social on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2726,7 +2730,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SoundAnalysis on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2743,7 +2747,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Speech on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2762,7 +2766,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SpriteKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"13.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2779,7 +2783,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework StoreKit on macOS"
 groups = ["default"]
-marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"11.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2798,7 +2802,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Symbols on macOS"
 groups = ["default"]
-marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"23.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2815,7 +2819,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SyncServices on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2835,7 +2839,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SystemConfiguration on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2854,7 +2858,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework SystemExtensions on macOS"
 groups = ["default"]
-marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"19.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2873,7 +2877,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework ThreadNetwork on macOS"
 groups = ["default"]
-marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"22.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2890,7 +2894,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework UniformTypeIdentifiers on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2907,7 +2911,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework UserNotifications on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2926,7 +2930,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework UserNotificationsUI on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-core>=10.3.2",
@@ -2945,7 +2949,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework VideoSubscriberAccount on macOS"
 groups = ["default"]
-marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"18.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2962,7 +2966,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework VideoToolbox on macOS"
 groups = ["default"]
-marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"12.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -2983,7 +2987,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Virtualization on macOS"
 groups = ["default"]
-marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"20.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -3002,7 +3006,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework Vision on macOS"
 groups = ["default"]
-marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\""
+marker = "platform_release >= \"17.0\" and platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -3023,7 +3027,7 @@ version = "10.3.2"
 requires_python = ">=3.8"
 summary = "Wrappers for the framework WebKit on macOS"
 groups = ["default"]
-marker = "platform_system == \"Darwin\""
+marker = "platform_system == \"Darwin\" and python_version == \"3.9\""
 dependencies = [
     "pyobjc-core>=10.3.2",
     "pyobjc-framework-Cocoa>=10.3.2",
@@ -3042,6 +3046,7 @@ version = "6.8.1"
 requires_python = "<3.14,>=3.9"
 summary = "Python bindings for the Qt cross-platform application and UI framework"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "PySide6-Addons==6.8.1",
     "PySide6-Essentials==6.8.1",
@@ -3060,6 +3065,7 @@ version = "6.8.1"
 requires_python = "<3.14,>=3.9"
 summary = "Python bindings for the Qt cross-platform application and UI framework (Addons)"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "PySide6-Essentials==6.8.1",
     "shiboken6==6.8.1",
@@ -3077,6 +3083,7 @@ version = "6.8.1"
 requires_python = "<3.14,>=3.9"
 summary = "Python bindings for the Qt cross-platform application and UI framework (Essentials)"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "shiboken6==6.8.1",
 ]
@@ -3092,6 +3099,7 @@ name = "pyside6-fluent-widgets"
 version = "1.7.4"
 summary = "A fluent design widgets library based on PySide6"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "PySide6>=6.4.2",
     "PySideSix-Frameless-Window>=0.4.0",
@@ -3104,17 +3112,18 @@ files = [
 
 [[package]]
 name = "pysidesix-frameless-window"
-version = "0.4.3"
+version = "0.4.5"
 summary = "A cross-platform frameless window based on pyside6, support Win32, Linux and macOS."
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "PyCocoa; platform_system == \"Darwin\"",
     "pyobjc; platform_system == \"Darwin\"",
     "pywin32; platform_system == \"Windows\"",
 ]
 files = [
-    {file = "PySideSix-Frameless-Window-0.4.3.tar.gz", hash = "sha256:ae8650f854558ec678305fc98b8f79556372bf0dc9e3a4f29ee7c7e12bb68df5"},
-    {file = "PySideSix_Frameless_Window-0.4.3-py3-none-any.whl", hash = "sha256:4c3cf2b9706aa98ecff41e95d3db293b4593a81c0b13fb1540910e560496ab96"},
+    {file = "PySideSix_Frameless_Window-0.4.5-py3-none-any.whl", hash = "sha256:510399fcc61a7e7f0862532a5f1d39a6255044263f388f87fce61b4650ae6715"},
+    {file = "pysidesix_frameless_window-0.4.5.tar.gz", hash = "sha256:aee7a67c0bc1cfc1ec95fa9aaabf74a7c51c21c5e0af6be1ee2917271b4b03c5"},
 ]
 
 [[package]]
@@ -3122,7 +3131,7 @@ name = "pywin32"
 version = "308"
 summary = "Python for Window Extensions"
 groups = ["default"]
-marker = "platform_system == \"Windows\""
+marker = "platform_system == \"Windows\" and python_version == \"3.9\""
 files = [
     {file = "pywin32-308-cp39-cp39-win32.whl", hash = "sha256:7873ca4dc60ab3287919881a7d4f88baee4a6e639aa6962de25a98ba6b193341"},
     {file = "pywin32-308-cp39-cp39-win_amd64.whl", hash = "sha256:71b3322d949b4cc20776436a9c9ba0eeedcbc9c650daa536df63f0ff111bb920"},
@@ -3134,6 +3143,7 @@ version = "2.32.3"
 requires_python = ">=3.8"
 summary = "Python HTTP for Humans."
 groups = ["default"]
+marker = "python_version == \"3.9\""
 dependencies = [
     "certifi>=2017.4.17",
     "charset-normalizer<4,>=2",
@@ -3151,6 +3161,7 @@ version = "6.8.1"
 requires_python = "<3.14,>=3.9"
 summary = "Python/C++ bindings helper module"
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "shiboken6-6.8.1-cp39-abi3-macosx_12_0_universal2.whl", hash = "sha256:9a2f51d1ddd3b6d193a0f0fdc09f8d41f2092bc664723c9b9efc1056660d0608"},
     {file = "shiboken6-6.8.1-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:1dc4c1976809b0e68872bb98474cccd590455bdcd015f0e0639907e94af27b6a"},
@@ -3164,6 +3175,7 @@ version = "2.3.0"
 requires_python = ">=3.9"
 summary = "HTTP library with thread-safe connection pooling, file post, and more."
 groups = ["default"]
+marker = "python_version == \"3.9\""
 files = [
     {file = "urllib3-2.3.0-py3-none-any.whl", hash = "sha256:1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df"},
     {file = "urllib3-2.3.0.tar.gz", hash = "sha256:f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d"},

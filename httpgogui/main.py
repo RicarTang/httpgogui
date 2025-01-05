@@ -15,10 +15,10 @@ from qfluentwidgets import (
 )
 
 from PySide6.QtGui import QIcon
-from layout.header import HeaderWidget
-from layout.body import BodyWidget
-from layout.bottom import BottomWidget
-from components.table_widget import CommonTableWidget
+from httpgogui.layout.header import HeaderWidget
+from httpgogui.layout.body import BodyWidget
+from httpgogui.layout.bottom import BottomWidget
+from httpgogui.components.table_widget import CommonTableWidget
 from requests import request
 from requests.exceptions import MissingSchema
 from json.decoder import JSONDecodeError

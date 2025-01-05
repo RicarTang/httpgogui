@@ -15,7 +15,7 @@ from qfluentwidgets import (
     TextEdit,
 )
 from PySide6.QtCore import Qt
-from components.table_widget import CommonTableWidget
+from httpgogui.components.table_widget import CommonTableWidget
 
 
 class BodyWidget(CardWidget):
