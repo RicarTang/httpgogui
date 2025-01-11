@@ -1,6 +1,6 @@
 [project]
 name = "httpgogui"
-version = "0.1.0"
+version = "0.2.0"
 description = "httpgo gui"
 authors = [
     {name = "Tang", email = "357965604@qq.com"},

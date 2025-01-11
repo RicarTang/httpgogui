@@ -1,12 +1,9 @@
 from PySide6.QtWidgets import (
     QVBoxLayout,
-    QLabel,
     QStackedWidget,
     QWidget,
     QSizePolicy,
-    QHeaderView,
-    QTableWidgetItem,
-    QHBoxLayout,
+    QCompleter,
 )
 from qfluentwidgets import (
     CardWidget,
@@ -16,6 +13,7 @@ from qfluentwidgets import (
 )
 from PySide6.QtCore import Qt
 from httpgogui.components.table_widget import CommonTableWidget
+from httpgogui.utils.header_list import header_lsit
 
 
 class BodyWidget(CardWidget):
@@ -38,10 +36,14 @@ class BodyWidget(CardWidget):
         # params
         self.params_widget = CommonTableWidget(self)
         # body
-        # self.body_widget = QLabel("Body区域", self)
         self.body_widget = TextEdit(self)
         # header
         self.header_widget = CommonTableWidget(self)
+        # header key输入框添加自动补全
+        self.header_completer = QCompleter(header_lsit, self)
+        self.header_completer.setCaseSensitivity(Qt.CaseInsensitive)
+        self.header_completer.setMaxVisibleItems(10)
+        self.header_widget.key_lineedit.setCompleter(self.header_completer)
         # cookies
         self.cookies_widget = CommonTableWidget(self)
         # init body layout
@@ -68,12 +70,8 @@ class BodyWidget(CardWidget):
         # 添加tab与stacked
         self.add_widget_interface(self.params_widget, "paramsInterface", "Params")
         self.add_widget_interface(self.body_widget, "bodyInterface", "Body")
-        self.add_widget_interface(
-            self.header_widget, "headerInterface", "Headers"
-        )
-        self.add_widget_interface(
-            self.cookies_widget, "cookiesInterface", "Cookies"
-        )
+        self.add_widget_interface(self.header_widget, "headerInterface", "Headers")
+        self.add_widget_interface(self.cookies_widget, "cookiesInterface", "Cookies")
         # 布局添加组件
         self.__qvbox_layout.addWidget(self.segmented_widget)
         self.__qvbox_layout.addWidget(self.stacked_widget)

@@ -5,15 +5,14 @@ from PySide6.QtWidgets import (
     QHeaderView,
     QHBoxLayout,
 )
+from PySide6.QtCore import Qt
 from qfluentwidgets import (
     TableWidget,
-    PushButton,
     LineEdit,
     ToolButton,
     FluentIcon,
     Theme,
 )
-from PySide6.QtCore import Qt
 
 
 class CommonTableWidget(TableWidget):
@@ -22,6 +21,8 @@ class CommonTableWidget(TableWidget):
     def __init__(self, parent=None):
         super().__init__()
         self.parent = parent  # 预留参数
+        self.key_lineedit = None
+        self.value_lineedit = None
         # 启用边框并设置圆角
         self.setBorderVisible(True)
         self.setBorderRadius(8)
@@ -49,14 +50,14 @@ class CommonTableWidget(TableWidget):
     def init_row(self, row: int):
         """初始化row内容"""
         self.setRowCount(row + 1)
-        key_lineedit = LineEdit()
-        key_lineedit.setPlaceholderText("请输入key")
-        key_lineedit.setStyleSheet("LineEdit { border: none; }")
-        value_lineedit = LineEdit()
-        value_lineedit.setPlaceholderText("请输入value")
-        value_lineedit.setStyleSheet("LineEdit { border: none; }")
-        self.setCellWidget(row, 0, key_lineedit)
-        self.setCellWidget(row, 1, value_lineedit)
+        self.key_lineedit = LineEdit()
+        self.key_lineedit.setPlaceholderText("请输入key")
+        self.key_lineedit.setStyleSheet("LineEdit { border: none; }")
+        self.value_lineedit = LineEdit()
+        self.value_lineedit.setPlaceholderText("请输入value")
+        self.value_lineedit.setStyleSheet("LineEdit { border: none; }")
+        self.setCellWidget(row, 0, self.key_lineedit)
+        self.setCellWidget(row, 1, self.value_lineedit)
 
     def add_row(self):
         """添加行"""
